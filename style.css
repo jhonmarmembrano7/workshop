@@ -1,0 +1,325 @@
+*{
+	margin: 0;
+	paddin: 0;
+	box-sizing: border-box;
+	font-family: 'poppins', sans-serif;
+
+}
+
+body{
+	/*overflow: hidden;*/
+}
+.container{
+	width: 100%;
+	min-height: 100vh;
+	background-color: #f3f5f8;
+}
+
+nav{
+	display: flex;
+	width: 100%;
+	justify-content: space-around;
+	height: 80px;
+	z-index: 111;
+	background-color: black;
+
+}
+
+.navItems{
+	display: flex;
+
+}
+
+.navItems li{
+	list-style: none;
+	margin: 0 15px;
+	padding: 5px;
+	
+}
+.navItems li a{
+	font-size: 25px;
+	color: white;
+	letter-spacing: 3px;
+	text-decoration: none;
+	text-transfom: capitalize;
+	
+}
+
+.navItems li:hover a{
+	color: black;
+	background-color: white;
+	border-radius: 5px;
+}
+
+.wrapper{
+	display: flex;
+	width: 100%;
+	height: calc(100vh - 80px);
+	justify-content: center;
+	align-item: center;
+	padding: 0 10%;
+	overflow: hidden;
+}
+.wrapper::before{
+	position: absolute;
+	content: '';
+	height: 600px;
+	width: 600px;
+	border-radius: 50%;
+	left: -12%;
+	top: 40%;
+	background: linear-gradient(45deg, #727272, #E2E2E2);
+	animation: bigc 20s linear infinite;
+}
+@keyframes bigc{
+	50%{
+	left: -10%;
+	top: 35%;
+}
+}
+
+
+
+.wrapper::after{
+	position: absolute;
+	content: '';
+	height: 120px;
+	width: 120px;
+	border-radius: 50%;
+	left: 35%;
+	top: 15%;
+	background: linear-gradient(45deg, #727272, #E2E2E2);
+	animation: circs 4s linear infinite;
+
+}
+
+@keyframes circs{
+	60%{
+	left: 33%;
+	top: 14%;
+}
+}
+.cols{
+	width: 50%;
+}
+
+.cols0{
+	
+	z-index:5;
+}
+.topline{
+	display: block;
+	position: relative;
+	font-size: 35px;
+	letter-spacing: 5px;
+	color: #3d535f;
+}
+.topline::after{
+	position: absolute;
+	content: '';
+	height: 4px;
+	width: 45px;
+	bottom: 10px;
+	background-color: black;
+}
+h1{
+	display: block;
+	font-size: 40px;
+	font-weight: 900;
+	color: #3d535f;
+}
+
+.multiText{
+
+	text-transform: capitalize;
+	color: black;
+	border-radius: 10px;
+}
+
+p{
+	
+	display: block;
+	posistion: absolute;
+	width: 90%;
+	font-size: 1.2em;
+	color: #3d535f;
+}
+
+.btns{
+	width: 100%;
+	position: relative;
+	left: 60px;
+}
+button{
+	outline: none;
+	border: none;
+	cursor: pointer;
+	font-size: 25px;
+	font-weight: 400;
+	color: white;
+	background-color: #3d535f;
+	padding: 8px 14px;
+	margin: 40px 5px;
+	letter-spacing: 2px;
+	text-transform: capitalize;
+	box-shadow: 0 15px 10px rgba(0,0,0,0.4);
+}
+
+button:hover{
+	background-color: white;
+	color: #3d535f;	
+}
+
+.imgbox{
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+.imgbox img{
+	position: relative;
+	height: 120%;
+	width: calc(130% - 50px);
+	top: -10px;
+	right: -30px; 
+	animation: animateUser 4s linear infinite;
+}
+@keyframes animateUser{
+	50%{
+	right: -8px;
+	top: -29px;
+}
+}
+.imgbox #splash{
+	position: absolute;
+	top: 50%;
+	left: 60%;
+	transform: translate(-50%, -50%);
+	width: 160%;
+	filter: saturate(200%);
+	animation: animate 4s linear infinite;
+}
+@keyframes animate{
+	50%{
+	top: 49%;
+	left: 63%;
+	width:155%;
+}
+}
+
+
+/* section 1 */
+
+section{
+
+	height: 100vh;
+	width: 100vw;
+
+}
+
+#section1{
+ text-align: center;
+ justify-content: center;
+
+}
+
+
+.about{
+
+	padding-top: 50px;
+	justify-content: space-around;
+
+}
+
+.about div{
+	font-size: 15px;
+	color: #3d535f;
+}
+.about #nem{
+	font-size: 30px;
+
+}
+
+#ed{
+	padding-top: 50px;
+	font-size: 50px;
+}
+
+#coll{
+	font-size: 30px;
+	padding-top: 20px;
+}
+
+.college{
+	padding-top: 20px;
+}
+
+#hs{
+	font-size: 30px;
+	padding-top: 20px;
+
+}
+
+.shs{
+	padding-top: 20px;
+}
+
+#section2{
+	text-align: center;
+
+}
+
+#conts{
+	padding-top: 30px;
+	font-size: 50px;
+}
+
+#num{
+
+	padding-top: 60px;
+	font-size: 40px;
+}
+#mail{
+	padding-top: 10px;
+	font-size: 40px;
+}
+.content::before{
+	position: absolute;
+	content: '';
+	height: 120px;
+	width: 120px;
+	border-radius: 50%;
+	left: 70%;
+	top: 120%;
+	background: linear-gradient(45deg, #727272, #E2E2E2);
+	animation: sec1 4s linear infinite;
+
+}
+@keyframes sec1{
+	50%{
+	left: 69%;
+	top: 119%;
+}
+}
+
+
+
+.content::after{
+	position: absolute;
+	content: '';
+	height: 120px;
+	width: 120px;
+	border-radius: 50%;
+	left: 90%;
+	top: 250%;
+	background: linear-gradient(45deg, #727272, #E2E2E2);
+	animation: sec2 4s linear infinite;
+
+}
+@keyframes sec2{
+	50%{
+	left: 88%;
+	top: 248%;
+}
+}
+
+
